@@ -29,7 +29,7 @@ class School(models.Model):
     male = models.IntegerField(_('Male Students'), default=0)
     female = models.IntegerField(_('Female Students'), default=0)
     electricity_availability = models.BooleanField(_('Electricity Availability'), default=False)
-    school_code = models.BooleanField(_('School Code'), default=False)
+    school_code = models.IntegerField(_('School Code'), default=0)
     location = models.PointField(_('School Location'), srid=4326)
     created_at = models.DateTimeField(_('Date Created'), auto_now_add=True)
     updated_at = models.DateTimeField(_('Date Updated'), auto_now_add=False)
